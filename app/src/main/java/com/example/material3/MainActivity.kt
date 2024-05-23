@@ -3,10 +3,13 @@ package com.example.material3
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.layout.height
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -34,18 +37,18 @@ class MainActivity : ComponentActivity() {
                 ) {
 
 
-                    LazyColumn {
+//                    LazyColumn {
+//
+//                        items(count = 20) {
+//                            ImageCard(
+//                                title = "baco ipsum",
+//                                desc = "bacon ipsum decor iwl  is right kind of the dutratiuon of India",
+//                                modifier = Modifier.padding(16.dp)
+//                            )
+//                        }
+//                    }
 
-                        items(count = 20) {
-                            ImageCard(
-                                title = "baco ipsum",
-                                desc = "bacon ipsum decor iwl  is right kind of the dutratiuon of India",
-                                modifier = Modifier.padding(16.dp)
-                            )
-                        }
-                    }
-
-                    Box(contentAlignment = Alignment.Center) {
+                    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.TopCenter) {
                         //   FloatingActionButton(onClick = {}) {
                         //BadgeM3()
                         //  SliderM3()
@@ -55,11 +58,29 @@ class MainActivity : ComponentActivity() {
                         //  FilteredChip()
                         //   ElevatedFilteredChip()
                         //  SuggestionChipM3()
-                        InputChipM3()
+                        //  InputChipM3()
+                        //  AlertDialog()
+                        //  Menu()
+                        //CircularProgressLoaderM3()
+                        // CircularPercentageProgressLoaderM3()
+                        // LinearProgressLoaderM3()
+                        // LinearPercentageProgressLoaderM3()
+                        //OutlineTextFieldM3()
+                        // TextFieldM3()
+                        //  DocSearchM3()
+                        //BottomsheetM3()
+                        // StandaradBottomSheet()
+                        //ListsM3()
+                        // FABM3()
+                        //TopBarM3()
+                        // NavigationBar()
+                        // BottomAppBarM3()
+                        //   SnackbarM3()
+                        NavigationDrawer()
                         //  }
                     }
                 }
-                TopBar()
+                //  TopBar()
             }
         }
     }
@@ -78,6 +99,10 @@ class MainActivity : ComponentActivity() {
             )
         )
     }
+
+
+
+
 }
 
 
